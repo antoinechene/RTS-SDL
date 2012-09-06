@@ -1,0 +1,15 @@
+#id	Event	Action	[Comment]		CausedBy	WillEffect	WillEffect2	...	WillEffectN
+1	Spawn	1	[The unit spawn]	0	2
+2	Idle	2	[The unit is waiting]	0
+3	Move	3	[The unit move]		0
+4	Attack	4	[The unit attack]	0
+5	AMove	5	[The unit move and engage in sight]	0	3	4
+6	Hold	6	[The unit hold position]	0	3
+7	UnderAttack	7	[The unit is under attack]	0	4	8
+8	Flee	8	[The unit move away from the menace]	7	3
+9	Dance	9	[/dance]	0
+10	Die	10	[The unit is dead]	7
+11	Low_Fuel	11	[The unit is low on fuel]	3
+12	Building	12	[The unit is building something]	0
+13	Casting	13	[The unit is casting]	0
+14	Patrol	14	[Everyday i'm patroling]	0	3

@@ -1,0 +1,28 @@
+Remplacer l'updateRect de chaque units par leur case. Done
+Ca evite le refresh d'une grosse stack inutilement.
+
+Ajouter la state MOVE FOLLOW.
+
+SetInvalidate juste le rect visible. Done
+
+Script bombardement par la PS-1 avec grande portee pour defendre.
+
+Fog of War.
+
+Must have:
+The game is playable in network.
+The game is playable with at least 2 different nations.
+To produce unit you must build building first.
+A menu to let the player choose a nation and to make the game.
+At least 2 type of different ressources and they should be needed to build things or more.
+At least 3 different unit per nation.
+Maps with your ressources and obstacle.
+At least 2 maps.
+Animated sprites.
+Unit must be able to move.
+At least 1 Unit per nation must be able to attack.
+A player must be able to win at least by destroying all the opponent buildings (and units)
+The code is in C++ (with polymorphism)
+A state machine for your units behaviors.
+An HUD.
+An easy way to change all your graphics.

@@ -1,0 +1,53 @@
+//#ADD
+Minimap
+Motion	(ID::Event* e)
+{
+	int	wMap; // in pixel
+	int	hMap;
+	int	wMM;
+	int	hMM;
+	// Translate X Y of event to 0
+	if (e->state != PRESSED)
+		return ;
+	XCase = (wMap * e->x / wMM);
+	YCase = (hMap * e->y / yMM);
+}
+
+Selection
+ClickDown()
+{
+	// Place & show the selector GRect
+}
+ClickUp()
+{
+	// Hide the selector GRect and select units
+}
+Motion (ID::Event* e)
+{
+	// Change Position and size || Size
+}
+Selected()
+{
+	int	x; // in pixel
+	int	y;
+	int	w;
+	int	h;
+
+	// Convert pixels to case
+	floor(x);
+	floor(y);
+	ceil(w);
+	ceil(h);
+	ClearSelection();
+	while (case[x][y])
+	{
+		while (unit)
+		{
+			if (unit.x >= x && unit.x < w &&
+			    unit.y >= y && unit.y < h)
+			{
+				add2selection();
+			}
+		}
+	}
+}
